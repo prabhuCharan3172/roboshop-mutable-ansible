@@ -1,0 +1,4 @@
+- name: printing name
+  tasks:
+    ansible.bultin.debug:
+      msg: Hello
