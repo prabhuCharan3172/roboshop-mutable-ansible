@@ -1,0 +1,3 @@
+- name: printing name
+  debug:
+    msg: Hello

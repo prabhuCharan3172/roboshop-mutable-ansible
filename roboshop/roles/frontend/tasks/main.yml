@@ -1,3 +1,37 @@
-- name: printing name
-  debug:
-    msg: Hello
+- name: Installing nginx
+  ansible.builtin.yum:
+    name: nginx
+    status: installed
+
+- name: Removing Old Nginx Files
+  ansible.builtin.file:
+    path: /usr/share/nginx/html
+    state: absent
+
+- name: Extracting frontend content
+  ansible.builtin.unarchive:
+    src: "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
+    dest: /tmp
+    remote_src: yes
+
+- name: Copying Frontend content
+  ansible.builtin.copy:
+    src: /tmp/frontend/static/
+    dest: /usr/share/nginx/html
+
+- name: Copying Nginx config files
+  ansible.builtin.template:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf
+
+- name: Copying Roboshop config files
+  ansible.builtin.template:
+    src: roboshop.conf
+    dest: /etc/nginx/default.d/roboshop.conf
+
+- name: Restart Nginx
+  ansible.builtin.systemd:
+    state: started
+    name: nginx
+    enabled: true
+
