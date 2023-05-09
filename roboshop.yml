@@ -1,4 +1,6 @@
-- name: Setup Roboshop
+- name: Setup RoboShop
   hosts: "{{HOSTS}}"
+  become: yes
+  serial: 1
   roles:
-    - "{{APP_COMPONENT_NAME}}"
+    - "{{APP_COMPONENT_ROLE}}"
