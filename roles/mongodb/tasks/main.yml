@@ -3,4 +3,28 @@
     src: mongodb.repo
     dest: /etc/yum.repos.d/mongodb.repo
 
+- name: Installing MOngodb Server
+  ansible.builtin.yum:
+    name: mongodb-org
+    state: installed
+
+- name: Update Mongo Listen Ip Address
+  ansible.builtin.replace:
+    path: /etc/mongod.conf
+    regexp: '127.0.0.1'
+    replace: '0.0.0.0'
+
+- name: Restart MongoDB
+  ansible.builtin.systemd:
+    name: mongod
+    state: restarted
+    enabled: true
+
+- name: Download MongoDB Schema files
+  ansible.builtin.unarchive:
+    src: "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
+    dest: /tmp
+    remote_src: yes
+- name: Load shema
+
 
