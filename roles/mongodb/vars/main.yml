@@ -1,1 +1,2 @@
-COMPONENT: database
+COMPONENT: mongodb
+APP_TYPE: database

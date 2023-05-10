@@ -1,0 +1,23 @@
+- name: Add Roboshop App User
+  ansible.builtin.user:
+    name: roboshop
+    comment: Roboshop Application User
+
+- name: Remove Old App Content
+  ansible.builtin.file:
+    path: /home/roboshop/{{COMPONENT}}
+    state: absent
+
+- name: Creating App directory
+  ansible.builtin.file:
+    path: /home/roboshop/{{COMPONENT}}
+    state: directory
+  become_user: roboshop
+
+- name: Copy {{COMPONENT}} content
+  ansible.builtin.copy:
+    src: /tmp/{{COMPONENT}}-main/
+    dest: /home/roboshop/{{COMPONENT}}
+    remote_src: yes
+  become_user: roboshop
+
