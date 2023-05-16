@@ -24,13 +24,11 @@
   ansible.builtin.template:
     src: roboshop.conf
     dest: /etc/nginx/default.d/roboshop.conf
-    remote_src: yes
 
 - name: Copying Nginx config files
   ansible.builtin.template:
     src: nginx.conf
     dest: /etc/nginx/nginx.conf
-    remote_src: yes
 
 - name: Restart Nginx
   ansible.builtin.systemd:
