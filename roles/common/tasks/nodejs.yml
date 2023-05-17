@@ -13,6 +13,7 @@
   ansible.builtin.yum:
     name: nodejs
     state: installed
+    disable_gpg_check: yes
 
 - name: Include App Pre Setup
   ansible.builtin.include_role:
