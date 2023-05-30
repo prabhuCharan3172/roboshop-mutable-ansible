@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c590fe54-382a-46e8-b35b-b8cf59a04fd8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/.idea/Learning_terraform.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/01_print/output.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/Learning_terraform.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aws-cli-infra-roboshop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aws-cli-infra-roboshop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="c590fe54-382a-46e8-b35b-b8cf59a04fd8" name="Changes" comment="Added files to terraform repo">
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/02_vars/dev.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/02_vars/terraform.auto.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/02_vars/terraform.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/04-modules/ec2/test.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/04-modules/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/04-modules/sg/sg.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/04-modules/state.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/example-01/instance.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/example-01/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning_terraform/example-01/security-group.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Learning_terraform/02_vars/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../Learning_terraform/02_vars/vars.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +30,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QK4luHWeKmtQr9Eq9ZM7E5xsvf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +46,9 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/prabh/IdeaProjects/Learning_terraform",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
@@ -65,6 +76,14 @@
       <option name="presentableId" value="Default" />
       <updated>1683539518549</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added files to terraform repo">
+      <created>1685355655011</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685355655011</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,5 +96,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added files to terraform repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added files to terraform repo" />
   </component>
 </project>
