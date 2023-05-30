@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c590fe54-382a-46e8-b35b-b8cf59a04fd8" name="Changes" comment="Added files to terraform repo">
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/02_vars/dev.tfvars" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/02_vars/terraform.auto.tfvars" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/02_vars/terraform.tfvars" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/04-modules/ec2/test.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/04-modules/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/04-modules/sg/sg.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/04-modules/state.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/example-01/instance.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/example-01/provider.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Learning_terraform/example-01/security-group.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Learning_terraform/02_vars/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../Learning_terraform/02_vars/vars.tf" afterDir="false" />
+    <list default="true" id="c590fe54-382a-46e8-b35b-b8cf59a04fd8" name="Changes" comment="Terraform leaarning code added for ec2 instance creation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685355655011</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Terraform leaarning code added for ec2 instance creation">
+      <created>1685432226416</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685432226416</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added files to terraform repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added files to terraform repo" />
+    <MESSAGE value="Terraform leaarning code added for ec2 instance creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Terraform leaarning code added for ec2 instance creation" />
   </component>
 </project>
